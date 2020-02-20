@@ -1,10 +1,15 @@
+# NewChain Contract Sample
+This simple sample is for the beginner of newchain contract development.
+If you have any problem, let me know.
 
-# install newtruffle
+# Steps
+
+## install newtruffle
 ```
 npm install -g newtruffle
 ```
 
-# initialize project
+## initialize project
 ```
 mkdir hello
 cd hello
@@ -13,7 +18,7 @@ echo "{\"name\":\"hello\"}" >package.json
 npm install newtruffle-hdwallet-provider
 ```
 
-# config the network parameter in truffle-config.js
+## config the network parameter in truffle-config.js
 ```
 ....
 const HDWalletProvider = require("newtruffle-hdwallet-provider");
@@ -28,13 +33,13 @@ const HDWalletProvider = require("newtruffle-hdwallet-provider");
 ```
 Replace `<your mnemonic>` by your mnemonic.
 
-# create contract
-## execute command 
+## create contract
+### execute command 
 ```
 newtruffle create contract Counter
 ```
 
-## edit the Counter.sol under contracts directory
+### edit the Counter.sol under contracts directory
 ```
 pragma solidity ^0.5.0;
 
@@ -54,13 +59,13 @@ contract Counter {
 }
 ```
 
-# compile contract
+## compile contract
 ```
 newtruffle compile
 ```
 
-# test contract
-## create the testcase file CounterTest.js under `test` directory
+## test contract
+### create the testcase file CounterTest.js under `test` directory
 ```
 const Counter = artifacts.require('Counter');
 
@@ -80,7 +85,7 @@ contract('Counter', function(accounts) {
   });
 });
 ```
-## execute command
+### execute command
 ```
 newtruffle test --network testnet
 ```
