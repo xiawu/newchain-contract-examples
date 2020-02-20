@@ -1,8 +1,8 @@
-# NewChain Contract Sample
-This simple sample is for the beginner of newchain contract development.
+# NewChain Contract Examples
+These simple examples are for the beginner of newchain contract development.
 If you have any problem, let me know.
 
-# Steps
+# Steps for create your first project `hello`
 
 ## install newtruffle
 ```
