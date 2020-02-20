@@ -1,0 +1,6 @@
+{
+  "name": "hello",
+  "dependencies": {
+    "newtruffle-hdwallet-provider": "^0.1.3"
+  }
+}
